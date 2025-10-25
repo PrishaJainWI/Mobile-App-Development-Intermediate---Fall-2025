@@ -1,15 +1,14 @@
 //
-//  ContentView.swift
+//  SignUp.swift
 //  Tether
 //
-//  Created by local on 10/12/25.
+//  Created by Prisha J. on 10/24/25.
 //
-
-//email, password, create account, new page that it leads to
 
 import SwiftUI
 
-struct ContentView: View {
+
+struct SignUp: View {
     @State private var email: String = ""
     @State private var password: String = ""
     var body: some View {
@@ -44,7 +43,7 @@ struct ContentView: View {
                 .rotationEffect(.degrees(-10))
             
             VStack{
-                Text("Welcome Back!")
+                Text("Sign Up")
                     .font(.system(size: 40, weight: .bold, design: .default))
                     .foregroundColor(Color(red: 0.93, green: 1.0, blue: 0.75))
                     .padding()
@@ -64,27 +63,21 @@ struct ContentView: View {
                     .background((Color.white.opacity(0.3)))
                     .cornerRadius(10)
                 
-                NavigationLink(destination: Home()){
-                    Text("Login")
+                NavigationLink(destination: ContentView()){
+                    Text("Create Account")
                         .font(.system(size: 20, weight: .bold, design: .default))
                         .foregroundColor(Color(red: 0.93, green: 1.0, blue: 0.75))
                         .padding()
                 }
                 
-                NavigationLink(destination: SignUp()){
-                    Text("No account? Create one!")
-                        .font(.system(size: 15, weight: .bold, design: .default))
-                        .foregroundColor(Color(red: 0.93, green: 1.0, blue: 0.75))
-                        .padding()
-                }
-                
+             
             
                 
             }
                 
             }
          
-        }.navigationTitle(Text("Login"))
+        }.navigationTitle(Text("Sign Up"))
 
 
     }
@@ -93,11 +86,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-
-
-
-
-
 
