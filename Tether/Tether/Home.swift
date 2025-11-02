@@ -2,7 +2,7 @@
 //  Home.swift
 //  Tether
 //
-//  Created by local on 10/24/25.
+//  Created by Prisha on 10/24/25.
 //
 
 import SwiftUI
