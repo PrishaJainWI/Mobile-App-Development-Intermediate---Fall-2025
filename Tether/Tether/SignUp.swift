@@ -84,6 +84,6 @@ struct SignUp: View {
 }
 
 #Preview {
-    SignUp()
+    ContentView()
 }
 
