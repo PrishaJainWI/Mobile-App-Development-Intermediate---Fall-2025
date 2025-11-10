@@ -12,17 +12,17 @@
  */
 import SwiftUI
 
-struct ContentView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+struct LoginScreen: View {
+    @Binding var email: String
+    @Binding var password: String
     var body: some View {
         VStack{
             TextField("Email", text: $email)
                 .bold(true)
                 .padding(.leading,170)
                 
-               
-            TextField("Password", text: $password)
+      
+            SecureField("Password", text: $password)
                 .bold(true)
                 .padding(.leading,170)
         }
@@ -32,5 +32,5 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView()
+    LoginScreen(email: .constant("test"), password: .constant("123"))
 }
