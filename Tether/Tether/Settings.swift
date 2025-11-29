@@ -1,38 +1,59 @@
 
-import Image
+/*
+ 
+ What I want you to do:
+ 
+ 1. add background
+ 2. un-hardcode everything --> add items (username + word 1/2/3) from signup to settings
+ */
 
 
-struct SettingsView: View {
-    @StateObject var  = SettingsViewModel()
-   
+
+import SwiftUI
+
+
+struct Settings: View {
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        List(vm.settings) { item in
-            HStack {
-                if let icon = item.icon {
-                    Image(systemName: icon)
-                }
+        
+        VStack{
+            Circle()
+                .stroke(Color.gray, lineWidth: 2)
+                .frame(width: 90, height: 90)
+                .offset(x: -120, y: -260)
             
-                Text(item.title)
-               
-                Spacer()
-               
-                switch item.type {
-                case .detail(let value):
-                    Text(value)
-                        .foregroundStyle(.gray)
-                   
-                case .toggle(let isOn):
-                    Toggle("", isOn: .constant(isOn))
-                        .labelsHidden()
-                   
-                case .navigation:
-                    Image(systemName: "movies.right")
-                }
+            TextField(email.isEmpty ? "Username" : email, text: $email)
+                .font(.system(size: 26, weight: .bold))
+                .foregroundStyle(Color.gray)
+                .offset(x: 150, y: -350)
+            
+            Button("Edit Profile") {
+                
             }
+            .padding(10)
+            .foregroundColor(Color.black)
+            .font(.system(size: 14))
+            .overlay(RoundedRectangle(cornerRadius: 30)
+                .stroke(Color.gray, lineWidth: 2)
+                     
+            )
+            .offset(x: -10, y: -350)
+            
+            
+        
+            
+            LoginScreen (email: $email, password: $password)
+            
         }
-        .onAppear {
-            vm.loadProfile()
-            vm.buildSettings()
-        }
-    }
-}
+        
+        
+       }
+       
+
+   }
+
+   #Preview {
+       Settings()
+   }
