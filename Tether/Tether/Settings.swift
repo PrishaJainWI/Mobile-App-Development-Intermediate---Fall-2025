@@ -3,7 +3,7 @@ import Image
 
 
 struct SettingsView: View {
-    @StateObject var vm = SettingsViewModel()
+    @StateObject var  = SettingsViewModel()
    
     var body: some View {
         List(vm.settings) { item in
@@ -11,7 +11,7 @@ struct SettingsView: View {
                 if let icon = item.icon {
                     Image(systemName: icon)
                 }
-               
+            
                 Text(item.title)
                
                 Spacer()
@@ -26,7 +26,7 @@ struct SettingsView: View {
                         .labelsHidden()
                    
                 case .navigation:
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "movies.right")
                 }
             }
         }
