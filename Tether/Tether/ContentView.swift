@@ -8,7 +8,6 @@
 //email, password, create account, new page that it leads to
 
 import SwiftUI
-
 struct ContentView: View {
     @State private var email: String = ""
     @State private var password: String = ""
