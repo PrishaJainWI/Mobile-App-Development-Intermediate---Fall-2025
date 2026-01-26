@@ -21,5 +21,23 @@ struct CapsuleView:View{
        
             
     }
+
 }
 
+func loginCred(img: String, writtenField: String, text: Binding<String>) -> some View{
+    HStack {
+        Image(systemName: "person")
+            .foregroundColor(.gray)
+        if writtenField.lowercased().contains("password"){
+            SecureField(writtenField, text: text)
+                .autocapitalization(.none)
+        }else {
+            TextField(writtenField, text: text)
+                .autocapitalization(.none)
+                }
+    }
+    .padding()
+    .background(Color.white.opacity(0.3))
+    .cornerRadius(15)
+    .padding(.horizontal, 50)
+}
