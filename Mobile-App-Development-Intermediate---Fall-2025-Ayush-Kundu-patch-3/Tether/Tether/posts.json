@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "username": "Sarah_Adventures",
+        "caption": "Beautiful sunset at the beach 🌅",
+        "imageName": "sunset",
+        "likes": 234,
+        "timeAgo": "2h ago"
+    },
+    {
+        "id": 2,
+        "username": "FoodieJohn",
+        "caption": "Best pasta I've ever made! Recipe coming soon 🍝",
+        "imageName": "pasta",
+        "likes": 187,
+        "timeAgo": "5h ago"
+    },
+    {
+        "id": 3,
+        "username": "TravelWithEmma",
+        "caption": "Mountain views that take your breath away 🏔️",
+        "imageName": "mountains",
+        "likes": 512,
+        "timeAgo": "8h ago"
+    },
+    {
+        "id": 4,
+        "username": "FitnessMax",
+        "caption": "Morning workout complete! Let's get it 💪",
+        "imageName": "workout",
+        "likes": 328,
+        "timeAgo": "10h ago"
+    },
+    {
+        "id": 5,
+        "username": "ArtByLily",
+        "caption": "New painting finished! What do you think? 🎨",
+        "imageName": "art",
+        "likes": 445,
+        "timeAgo": "12h ago"
+    },
+    {
+        "id": 6,
+        "username": "TechGuru_Mike",
+        "caption": "Just unboxed the latest gadget! Review coming soon 📱",
+        "imageName": "tech",
+        "likes": 289,
+        "timeAgo": "15h ago"
+    },
+    {
+        "id": 7,
+        "username": "NatureLover_Ana",
+        "caption": "Found this hidden waterfall on my hike today 💚",
+        "imageName": "waterfall",
+        "likes": 623,
+        "timeAgo": "1d ago"
+    },
+    {
+        "id": 8,
+        "username": "CoffeeAddict_Tom",
+        "caption": "Perfect latte art ☕️ Morning vibes",
+        "imageName": "coffee",
+        "likes": 156,
+        "timeAgo": "1d ago"
+    },
+    {
+        "id": 9,
+        "username": "MusicMaven_Jazz",
+        "caption": "Live concert tonight! Can't wait to perform 🎸",
+        "imageName": "music",
+        "likes": 892,
+        "timeAgo": "2d ago"
+    },
+    {
+        "id": 10,
+        "username": "PetLover_Sam",
+        "caption": "My dog's reaction when I come home 🐕❤️",
+        "imageName": "dog",
+        "likes": 1024,
+        "timeAgo": "2d ago"
+    }
+]
+
